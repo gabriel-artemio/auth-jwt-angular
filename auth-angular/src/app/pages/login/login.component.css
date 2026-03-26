@@ -1,0 +1,89 @@
+.login-container {
+  height: 100vh;
+  background: #bfc3c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  display: flex;
+  width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* LADO ESQUERDO */
+.login-left {
+  width: 40%;
+  background: #460e66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+}
+
+/* LADO DIREITO */
+.login-right {
+  width: 60%;
+  background: #e9ecef;
+  padding: 40px;
+  text-align: center;
+}
+
+.title {
+  color: #460e66;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  background: #dfe4ea;
+  border: none;
+}
+
+/* SENHA COM ÍCONE */
+.password-group {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+/* BOTÃO */
+.btn-login {
+  width: 100%;
+  background: #460e66;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+}
