@@ -4,7 +4,11 @@ import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root',
 })
-export class AuthServiceService {
+export class AuthService {
+  private isLogged = false;
+
+  constructor(private router: Router) {}
+
   login(user: string, pass: string) {
 
     if (user === 'admin' && pass === '123') {

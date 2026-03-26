@@ -1,18 +1,14 @@
 <div class="login-container">
 
   <div class="login-card">
-
-    <!-- LADO ESQUERDO -->
     <div class="login-left">
-      <img src="assets/logo.png" alt="Logo" class="logo">
+      <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <!-- LADO DIREITO -->
     <div class="login-right">
-      <h2 class="title">SmartGela</h2>
+      <h2 class="title">Auth JWT</h2>
       <h5 class="subtitle"><b>Login</b></h5>
 
-      <!-- USUÁRIO -->
       <div class="form-group">
         <input
           type="text"
@@ -21,9 +17,7 @@
           [(ngModel)]="username">
       </div>
 
-      <!-- SENHA -->
       <div class="form-group password-group">
-
         <input
           [type]="showPassword ? 'text' : 'password'"
           class="form-control"
@@ -33,23 +27,17 @@
         <span class="eye-icon" (click)="togglePassword()">
           <i class="bi bi-eye-fill"></i>
         </span>
-
       </div>
 
-      <!-- BOTÃO -->
       <button class="btn-login" (click)="login()">
         Entrar <i class="bi bi-box-arrow-in-right"></i>
       </button>
 
-      <!-- ERRO -->
       <div class="text-danger mt-2" *ngIf="error">
         {{error}}
       </div>
-
-      <p class="footer">© GoCode</p>
+      <p class="footer">© Gabriel Artemio</p>
 
     </div>
-
   </div>
-
 </div>
